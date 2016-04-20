@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <welcome-file-list>
+    <welcome-file>
+				/WEB-INF/views/home.jsp
+		</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Hello</display-name>
+    <servlet-name>Hello</servlet-name>
+    <servlet-class>tom.servlet.Hello</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Hello</servlet-name>
+    <url-pattern>/Hello</url-pattern>
+    <url-pattern>/hello</url-pattern>
+    <url-pattern>/HELLO</url-pattern>
+    <url-pattern>/welcome</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Second</display-name>
+    <servlet-name>Second</servlet-name>
+    <servlet-class>tom.servlet.Second</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Second</servlet-name>
+    <url-pattern>/Second</url-pattern>
+    <url-pattern>/wasd</url-pattern>
+    <url-pattern>/wasda</url-pattern>
+  </servlet-mapping>
+</web-app>
